@@ -34,6 +34,15 @@ def cluster_frechet(dist_file, lbl):
 
 	tree=Pycluster.treecluster(distancematrix=dist)
 
+
+	#cluster tree nodes if closer than threshold
+	for i,t in enumerate(tree):
+		print i,t.dist
+
+ 
+	
+
+
 	#return tree
 	#for cluster in tree:
 	
